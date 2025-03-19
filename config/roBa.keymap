@@ -60,9 +60,9 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E  &kp R  &kp T                                                  &kp Y          &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D  &kp F  &kp G         &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp H          &kp J  &kp K      &kp L    &lt_to_layer_0 5 SEMICOLON
+&kp A             &kp S         &kp D  &kp F  &kp G         &kp LEFT_BRACKET      &kp RIGHT_BRACKET  &kp H          &kp J  &kp K      &kp L    &lt_to_layer_0 6 SEMICOLON
 &mt LEFT_SHIFT Z  &kp X         &kp C  &kp V  &kp B         &kp MINUS             &kp GRAVE          &kp N          &kp M  &kp COMMA  &kp DOT  &kp SINGLE_QUOTE
-&kp LCTRL         &kp LEFT_ALT  &mo 2  &mo 2  &kp LEFT_GUI  &kp SPACE             &lt 1 ENTER        &kp BACKSPACE                             &lt_to_layer_0 3 SLASH
+&kp LCTRL         &kp LEFT_ALT  &mo 3  &mo 2  &kp LEFT_GUI  &kp SPACE             &lt 1 ENTER        &kp BACKSPACE                             &lt_to_layer_0 4 SLASH
             >;
         };
 
@@ -84,6 +84,15 @@
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
+        };
+
+        Multi {
+            bindings = <
+&kp LG(NUMBER_1)  &kp LG(NUMBER_2)  &kp LG(NUMBER_3)  &kp LG(NUMBER_4)  &kp LG(NUMBER_5)                      &trans        &kp LG(TAB)  &trans           &trans  &trans
+&kp LC(NUMBER_1)  &kp LC(NUMBER_2)  &kp LC(NUMBER_3)  &kp LC(NUMBER_4)  &kp LC(NUMBER_5)  &trans      &trans  &kp C_VOL_DN  &kp C_PP     &kp C_VOLUME_UP  &trans  &trans
+&trans            &trans            &trans            &trans            &trans            &trans      &trans  &kp C_PREV    &kp C_NEXT   &trans           &trans  &trans
+&trans            &trans            &trans            &trans            &trans            &trans      &trans  &trans                                              &trans
+            >;
         };
 
         BLUETOOTH {
